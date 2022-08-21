@@ -26,7 +26,7 @@ class NewsList: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        viewModel.getTopHeadlines(forCountry: "us")
         // Do any additional setup after loading the view.
     }
 }

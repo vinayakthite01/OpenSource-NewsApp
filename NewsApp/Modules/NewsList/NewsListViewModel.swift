@@ -26,12 +26,12 @@ class NewsListViewModel: NewsListViewModelProtocol {
     /// - Parameter country: Country
     func getTopHeadlines(forCountry country:String) {
         apiManager?.getTopBusinessHeadlines(country: country, completion: { [weak self] result in
-//            switch result {
-//            case .success(_):
-//                <#code#>
-//            case .failure(_):
-//                <#code#>
-//            }
+            switch result {
+            case .success(_):
+                <#code#>
+            case .failure(_):
+                <#code#>
+            }
         })
     }
 }

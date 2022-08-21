@@ -8,11 +8,11 @@
 import Foundation
 
 protocol NewsListViewModelProtocol {
-    
+    func getTopHeadlines(forCountry country:String)
 }
 
 protocol NewsListNavigatorProtocol {
-    
+    func showNewsDetails()
 }
 
 enum NewsListUIUpdateCase {

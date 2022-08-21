@@ -7,13 +7,13 @@
 
 import UIKit
 
-protocol NewsBuilderProtocol {
+protocol NewsListBuilderProtocol {
     /// Build Profile stack
     /// - Returns: UIViewController
     func build(with navigator: NewsListNavigatorProtocol) -> UIViewController
 }
 
-struct NewsBuilder: NewsBuilderProtocol {
+struct NewsListBuilder: NewsListBuilderProtocol {
     
     /// API Manager
     let apiManager: APIManagerProtocol
