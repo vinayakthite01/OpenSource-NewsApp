@@ -32,9 +32,15 @@ final class APIManager {
 /// `APIManager Protocol`
 protocol APIManagerProtocol: AnyObject {
     /// `News` API
-    ///
+    func getTopBusinessHeadlines(country:String, completion: @escaping (Result<NewsListModel?, APIError>) -> Void)
 }
 
 extension APIManager: APIManagerProtocol {
-    
+    /// `News` API
+    func getTopBusinessHeadlines(country:String, completion: @escaping (Result<NewsListModel?, APIError>) -> Void) {
+        serverRouter.request(.getTopHeadlines(countryCode: "us"), decode: { json -> NewsListModel? in
+            guard let results = json as? NewsListModel? else { return  nil }
+            return results
+        }, completion: completion)
+    }
 }

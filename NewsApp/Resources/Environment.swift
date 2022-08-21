@@ -25,10 +25,10 @@ public enum Environment {
     }()
     
     // MARK: - Plist values
-    static let serverlessURL: String = {
+    static let serverURL: String = {
         guard let endevourURLstring = Environment.infoDictionary[Keys.Plist.serverURL] as? String,
               endevourURLstring.count > 0 else {
-            fatalError("*** Serverless API key not set in plist for this environment ***")
+            fatalError("*** Server API key not set in plist for this environment ***")
         }
         return endevourURLstring
     }()

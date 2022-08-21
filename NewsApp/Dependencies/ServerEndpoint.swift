@@ -9,32 +9,38 @@ import Foundation
 
 enum ServerEndpoint {
     /// User
-    case getUploadURL
+    case getTopHeadlines(countryCode: String)
+
 }
 
 extension ServerEndpoint: EndPointType {
     /// scheme will be https
     var scheme: String { "https" }
     /// base URL
-    var baseURL: String { "Environment.serverlessURL" }
+    var baseURL: String { Environment.serverURL }
     /// api path
-    private var middlePath: String { "/dev" }
-    /// path component
-    var path: String {
-        var finalPath = String()
-        
+    private var middlePath: String { "v2/top-headlines?" }
+    /// Country
+    private var country: String {
         switch self {
-        case .getUploadURL:
-            finalPath = "/profile-image/jpeg"
+        case .getTopHeadlines(let countryCode):
+            return "country=\(countryCode)"
         }
-        
-        return middlePath + finalPath
     }
+    /// News Category
+    private var category: String{ "&category=business" }
+    /// API Key
+    private var apiKey: String{ "&apiKey=\(Environment.apiKey)" }
+    /// URL Path
+    var path: String {
+        return middlePath + country + category + apiKey
+    }
+    
     /// request method type
     var httpMethod: HTTPMethod {
         switch self {
-        case .getUploadURL:
-            return .get
+        case .getTopHeadlines:
+               return .get
         }
     }
     /// parameters passing
@@ -46,7 +52,8 @@ extension ServerEndpoint: EndPointType {
     /// data (body) passing as params
     var data: Data? {
         switch self {
-        case .getUploadURL:
+        
+        case .getTopHeadlines:
             return nil
         }
     }

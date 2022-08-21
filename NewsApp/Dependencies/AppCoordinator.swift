@@ -34,6 +34,16 @@ final class AppCoordinator: AppCoordinatorProtocol {
 
     /// start the flow
     func start() {
-               Logger.log("Environment.rootURL")
+        Logger.log("Environment.rootURL")
+        showNewsList()
+    }
+}
+
+extension AppCoordinator {
+    
+    /// Initiate NewsList Coordinator
+    func showNewsList() {
+        let newsListCoordinator = NewsListCoordinator(dependencies: dependencies, navigationController: navigationController)
+        newsListCoordinator.start()
     }
 }

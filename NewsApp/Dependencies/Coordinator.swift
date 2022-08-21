@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 // MARK: - Coordinator protocol
 protocol Coordinator: AnyObject {
     /// Commanly required dependacies

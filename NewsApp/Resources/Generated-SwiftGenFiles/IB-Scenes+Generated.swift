@@ -17,10 +17,10 @@ internal enum StoryboardScene {
 
     internal static let initialScene = InitialSceneType<UIKit.UIViewController>(storyboard: LaunchScreen.self)
   }
-  internal enum Main: StoryboardType {
-    internal static let storyboardName = "Main"
+  internal enum News: StoryboardType {
+    internal static let storyboardName = "News"
 
-    internal static let initialScene = InitialSceneType<NewsApp.ViewController>(storyboard: Main.self)
+    internal static let newsList = SceneType<NewsApp.NewsList>(storyboard: News.self, identifier: "NewsList")
   }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name
