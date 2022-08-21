@@ -10,3 +10,6 @@
 
 // Server URL
 SERVER_URL = newsapi.org
+
+// News App API Key
+API_KEY = 13602569df7443ffaa7bac70d5b0a4b0

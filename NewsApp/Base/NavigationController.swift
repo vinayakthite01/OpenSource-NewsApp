@@ -45,8 +45,8 @@ protocol NewsAppNavigationControllerProtocol {
     ///   - modalPresentationStyle: UIModalPresentationStyle
     ///   - animated: with animation
     ///   - completion: completion handler
-    ///    Return the object of MWHNavigationControllerProtocol which can be used to perform next push/present transmisions
-    /// Returned MWHNavigationControllerProtocol needs to be persisted.
+    ///    Return the object of NewsAppNavigationControllerProtocol which can be used to perform next push/present transmisions
+    /// Returned NewsAppNavigationControllerProtocol needs to be persisted.
     func presentWithNavigator(viewController: UIViewController,
                               modalPresentationStyle: UIModalPresentationStyle,
                               completion: (() -> Void)?) -> NewsAppNavigationControllerProtocol

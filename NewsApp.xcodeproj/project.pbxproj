@@ -39,6 +39,7 @@
 		F3585B8528B2695A00BCFD01 /* IB-Segues+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B8128B2695A00BCFD01 /* IB-Segues+Generated.swift */; };
 		F3585B8628B2695A00BCFD01 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B8228B2695A00BCFD01 /* Strings+Generated.swift */; };
 		F3585B8928B26A3D00BCFD01 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3585B8728B26A3D00BCFD01 /* Localizable.strings */; };
+		F3585B8B28B26E3200BCFD01 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B8A28B26E3200BCFD01 /* Environment.swift */; };
 		F65A69E0F1C16431C56842C5 /* Pods_NewsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59890A2FA2898B864753B233 /* Pods_NewsAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +105,7 @@
 		F3585B8128B2695A00BCFD01 /* IB-Segues+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IB-Segues+Generated.swift"; sourceTree = "<group>"; };
 		F3585B8228B2695A00BCFD01 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 		F3585B8828B26A3D00BCFD01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = NewsApp/Base.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		F3585B8A28B26E3200BCFD01 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +304,7 @@
 		F3585B7D28B2689500BCFD01 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F3585B8A28B26E3200BCFD01 /* Environment.swift */,
 				F3585B8728B26A3D00BCFD01 /* Localizable.strings */,
 				F3585B2428B23A1000BCFD01 /* Assets.xcassets */,
 				F3585B7E28B2689500BCFD01 /* Generated-SwiftGenFiles */,
@@ -592,6 +595,7 @@
 				F3585B6028B2579C00BCFD01 /* Logger.swift in Sources */,
 				F3585B6B28B25B0E00BCFD01 /* NetworkCheckStack.swift in Sources */,
 				F3585B5928B252CF00BCFD01 /* SessionManager.swift in Sources */,
+				F3585B8B28B26E3200BCFD01 /* Environment.swift in Sources */,
 				F3585B8628B2695A00BCFD01 /* Strings+Generated.swift in Sources */,
 				F3585B5028B2503E00BCFD01 /* Coordinator.swift in Sources */,
 				F3585B1C28B23A0C00BCFD01 /* AppDelegate.swift in Sources */,
