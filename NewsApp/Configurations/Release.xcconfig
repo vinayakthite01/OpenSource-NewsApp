@@ -1,0 +1,12 @@
+//
+//  Release.xcconfig
+//  NewsApp
+//
+//  Created by Vinayak Thite on 21/08/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Server URL
+SERVER_URL = newsapi.org

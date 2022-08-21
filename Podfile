@@ -6,9 +6,11 @@ target 'NewsApp' do
   use_frameworks!
 
   # Pods for NewsApp
-
+# Firebase for crashlytics and analytics
 pod 'FirebaseAnalytics'
 pod 'FirebaseCrashlytics'
+# Autogeneration of code for assets: https://cocoapods.org/pods/SwiftGen
+pod 'SwiftGen', '6.4.0'
 
   target 'NewsAppTests' do
     inherit! :search_paths

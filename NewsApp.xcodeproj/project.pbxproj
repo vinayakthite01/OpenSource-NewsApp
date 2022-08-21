@@ -19,6 +19,26 @@
 		F3585B3D28B23A1000BCFD01 /* NewsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B3C28B23A1000BCFD01 /* NewsAppUITests.swift */; };
 		F3585B3F28B23A1000BCFD01 /* NewsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B3E28B23A1000BCFD01 /* NewsAppUITestsLaunchTests.swift */; };
 		F3585B4C28B23EB200BCFD01 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3585B4B28B23EB200BCFD01 /* GoogleService-Info.plist */; };
+		F3585B4E28B24FFE00BCFD01 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B4D28B24FFE00BCFD01 /* AppCoordinator.swift */; };
+		F3585B5028B2503E00BCFD01 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B4F28B2503E00BCFD01 /* Coordinator.swift */; };
+		F3585B5328B2509100BCFD01 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B5228B2509100BCFD01 /* DependencyContainer.swift */; };
+		F3585B5528B251B900BCFD01 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B5428B251B900BCFD01 /* APIManager.swift */; };
+		F3585B5728B2523300BCFD01 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B5628B2523300BCFD01 /* DependencyManager.swift */; };
+		F3585B5928B252CF00BCFD01 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B5828B252CF00BCFD01 /* SessionManager.swift */; };
+		F3585B5B28B256E400BCFD01 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B5A28B256E400BCFD01 /* Router.swift */; };
+		F3585B5E28B2573D00BCFD01 /* RouterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B5D28B2573D00BCFD01 /* RouterHelper.swift */; };
+		F3585B6028B2579C00BCFD01 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B5F28B2579C00BCFD01 /* Logger.swift */; };
+		F3585B6628B2588200BCFD01 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B6528B2588200BCFD01 /* NavigationController.swift */; };
+		F3585B6928B25A0500BCFD01 /* ServerEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B6828B25A0500BCFD01 /* ServerEndpoint.swift */; };
+		F3585B6B28B25B0E00BCFD01 /* NetworkCheckStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B6A28B25B0E00BCFD01 /* NetworkCheckStack.swift */; };
+		F3585B6D28B25BB600BCFD01 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B6C28B25BB600BCFD01 /* DateFormatter+Extension.swift */; };
+		F3585B7028B25C8C00BCFD01 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F3585B6F28B25C8C00BCFD01 /* Debug.xcconfig */; };
+		F3585B7A28B2676900BCFD01 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = F3585B7928B2676900BCFD01 /* swiftgen.yml */; };
+		F3585B8328B2695A00BCFD01 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B7F28B2695A00BCFD01 /* XCAssets+Generated.swift */; };
+		F3585B8428B2695A00BCFD01 /* IB-Scenes+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B8028B2695A00BCFD01 /* IB-Scenes+Generated.swift */; };
+		F3585B8528B2695A00BCFD01 /* IB-Segues+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B8128B2695A00BCFD01 /* IB-Segues+Generated.swift */; };
+		F3585B8628B2695A00BCFD01 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585B8228B2695A00BCFD01 /* Strings+Generated.swift */; };
+		F3585B8928B26A3D00BCFD01 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3585B8728B26A3D00BCFD01 /* Localizable.strings */; };
 		F65A69E0F1C16431C56842C5 /* Pods_NewsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59890A2FA2898B864753B233 /* Pods_NewsAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +83,27 @@
 		F3585B3C28B23A1000BCFD01 /* NewsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAppUITests.swift; sourceTree = "<group>"; };
 		F3585B3E28B23A1000BCFD01 /* NewsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F3585B4B28B23EB200BCFD01 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F3585B4D28B24FFE00BCFD01 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F3585B4F28B2503E00BCFD01 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F3585B5228B2509100BCFD01 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		F3585B5428B251B900BCFD01 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		F3585B5628B2523300BCFD01 /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
+		F3585B5828B252CF00BCFD01 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		F3585B5A28B256E400BCFD01 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		F3585B5D28B2573D00BCFD01 /* RouterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterHelper.swift; sourceTree = "<group>"; };
+		F3585B5F28B2579C00BCFD01 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		F3585B6528B2588200BCFD01 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		F3585B6828B25A0500BCFD01 /* ServerEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerEndpoint.swift; sourceTree = "<group>"; };
+		F3585B6A28B25B0E00BCFD01 /* NetworkCheckStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCheckStack.swift; sourceTree = "<group>"; };
+		F3585B6C28B25BB600BCFD01 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		F3585B6F28B25C8C00BCFD01 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		F3585B7128B25CA000BCFD01 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		F3585B7928B2676900BCFD01 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		F3585B7F28B2695A00BCFD01 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
+		F3585B8028B2695A00BCFD01 /* IB-Scenes+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IB-Scenes+Generated.swift"; sourceTree = "<group>"; };
+		F3585B8128B2695A00BCFD01 /* IB-Segues+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IB-Segues+Generated.swift"; sourceTree = "<group>"; };
+		F3585B8228B2695A00BCFD01 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		F3585B8828B26A3D00BCFD01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = NewsApp/Base.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +144,6 @@
 				290858B45AE36FDB6F912DDD /* Pods-NewsAppTests.debug.xcconfig */,
 				EAC12609554C3D9EF34BD928 /* Pods-NewsAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -120,6 +160,7 @@
 		F3585B0F28B23A0C00BCFD01 = {
 			isa = PBXGroup;
 			children = (
+				F3585B7928B2676900BCFD01 /* swiftgen.yml */,
 				F3585B1A28B23A0C00BCFD01 /* NewsApp */,
 				F3585B3128B23A1000BCFD01 /* NewsAppTests */,
 				F3585B3B28B23A1000BCFD01 /* NewsAppUITests */,
@@ -142,14 +183,19 @@
 		F3585B1A28B23A0C00BCFD01 /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
-				F3585B1B28B23A0C00BCFD01 /* AppDelegate.swift */,
-				F3585B1D28B23A0C00BCFD01 /* SceneDelegate.swift */,
-				F3585B1F28B23A0C00BCFD01 /* ViewController.swift */,
+				F3585B6228B257CB00BCFD01 /* AppDelegate */,
+				F3585B6328B257DC00BCFD01 /* SceneDelegate */,
+				F3585B6E28B25BCC00BCFD01 /* Extensions */,
+				F3585B6728B2588700BCFD01 /* Base */,
+				F3585B6128B257B100BCFD01 /* Utils */,
+				F3585B5128B2505400BCFD01 /* Dependencies */,
+				F3585B6428B257E600BCFD01 /* Modules */,
 				F3585B2128B23A0C00BCFD01 /* Main.storyboard */,
-				F3585B2428B23A1000BCFD01 /* Assets.xcassets */,
 				F3585B2628B23A1000BCFD01 /* LaunchScreen.storyboard */,
+				F3585B7328B25EA500BCFD01 /* Configurations */,
 				F3585B2928B23A1000BCFD01 /* Info.plist */,
 				F3585B4B28B23EB200BCFD01 /* GoogleService-Info.plist */,
+				F3585B7D28B2689500BCFD01 /* Resources */,
 			);
 			path = NewsApp;
 			sourceTree = "<group>";
@@ -171,6 +217,109 @@
 			path = NewsAppUITests;
 			sourceTree = "<group>";
 		};
+		F3585B5128B2505400BCFD01 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				F3585B4D28B24FFE00BCFD01 /* AppCoordinator.swift */,
+				F3585B4F28B2503E00BCFD01 /* Coordinator.swift */,
+				F3585B5228B2509100BCFD01 /* DependencyContainer.swift */,
+				F3585B5428B251B900BCFD01 /* APIManager.swift */,
+				F3585B5628B2523300BCFD01 /* DependencyManager.swift */,
+				F3585B5828B252CF00BCFD01 /* SessionManager.swift */,
+				F3585B5C28B256FF00BCFD01 /* Networking */,
+				F3585B6828B25A0500BCFD01 /* ServerEndpoint.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		F3585B5C28B256FF00BCFD01 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F3585B5A28B256E400BCFD01 /* Router.swift */,
+				F3585B5D28B2573D00BCFD01 /* RouterHelper.swift */,
+				F3585B6A28B25B0E00BCFD01 /* NetworkCheckStack.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F3585B6128B257B100BCFD01 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F3585B5F28B2579C00BCFD01 /* Logger.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F3585B6228B257CB00BCFD01 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F3585B1B28B23A0C00BCFD01 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F3585B6328B257DC00BCFD01 /* SceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F3585B1D28B23A0C00BCFD01 /* SceneDelegate.swift */,
+			);
+			path = SceneDelegate;
+			sourceTree = "<group>";
+		};
+		F3585B6428B257E600BCFD01 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F3585B1F28B23A0C00BCFD01 /* ViewController.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F3585B6728B2588700BCFD01 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F3585B6528B2588200BCFD01 /* NavigationController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F3585B6E28B25BCC00BCFD01 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F3585B6C28B25BB600BCFD01 /* DateFormatter+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F3585B7328B25EA500BCFD01 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				F3585B7128B25CA000BCFD01 /* Release.xcconfig */,
+				F3585B6F28B25C8C00BCFD01 /* Debug.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		F3585B7D28B2689500BCFD01 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F3585B8728B26A3D00BCFD01 /* Localizable.strings */,
+				F3585B2428B23A1000BCFD01 /* Assets.xcassets */,
+				F3585B7E28B2689500BCFD01 /* Generated-SwiftGenFiles */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F3585B7E28B2689500BCFD01 /* Generated-SwiftGenFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F3585B8028B2695A00BCFD01 /* IB-Scenes+Generated.swift */,
+				F3585B8128B2695A00BCFD01 /* IB-Segues+Generated.swift */,
+				F3585B8228B2695A00BCFD01 /* Strings+Generated.swift */,
+				F3585B7F28B2695A00BCFD01 /* XCAssets+Generated.swift */,
+			);
+			path = "Generated-SwiftGenFiles";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,6 +332,7 @@
 				F3585B1528B23A0C00BCFD01 /* Frameworks */,
 				F3585B1628B23A0C00BCFD01 /* Resources */,
 				272C34F03E6B81A478241CBE /* [CP] Embed Pods Frameworks */,
+				F3585B7828B263B500BCFD01 /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -281,8 +431,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3585B2828B23A1000BCFD01 /* LaunchScreen.storyboard in Resources */,
+				F3585B7A28B2676900BCFD01 /* swiftgen.yml in Resources */,
 				F3585B4C28B23EB200BCFD01 /* GoogleService-Info.plist in Resources */,
+				F3585B8928B26A3D00BCFD01 /* Localizable.strings in Resources */,
 				F3585B2528B23A1000BCFD01 /* Assets.xcassets in Resources */,
+				F3585B7028B25C8C00BCFD01 /* Debug.xcconfig in Resources */,
 				F3585B2328B23A0C00BCFD01 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +557,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F3585B7828B263B500BCFD01 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -411,9 +582,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3585B4E28B24FFE00BCFD01 /* AppCoordinator.swift in Sources */,
+				F3585B6928B25A0500BCFD01 /* ServerEndpoint.swift in Sources */,
+				F3585B6D28B25BB600BCFD01 /* DateFormatter+Extension.swift in Sources */,
 				F3585B2028B23A0C00BCFD01 /* ViewController.swift in Sources */,
+				F3585B5E28B2573D00BCFD01 /* RouterHelper.swift in Sources */,
+				F3585B8428B2695A00BCFD01 /* IB-Scenes+Generated.swift in Sources */,
+				F3585B5B28B256E400BCFD01 /* Router.swift in Sources */,
+				F3585B6028B2579C00BCFD01 /* Logger.swift in Sources */,
+				F3585B6B28B25B0E00BCFD01 /* NetworkCheckStack.swift in Sources */,
+				F3585B5928B252CF00BCFD01 /* SessionManager.swift in Sources */,
+				F3585B8628B2695A00BCFD01 /* Strings+Generated.swift in Sources */,
+				F3585B5028B2503E00BCFD01 /* Coordinator.swift in Sources */,
 				F3585B1C28B23A0C00BCFD01 /* AppDelegate.swift in Sources */,
+				F3585B6628B2588200BCFD01 /* NavigationController.swift in Sources */,
+				F3585B8528B2695A00BCFD01 /* IB-Segues+Generated.swift in Sources */,
+				F3585B5728B2523300BCFD01 /* DependencyManager.swift in Sources */,
+				F3585B5328B2509100BCFD01 /* DependencyContainer.swift in Sources */,
 				F3585B1E28B23A0C00BCFD01 /* SceneDelegate.swift in Sources */,
+				F3585B8328B2695A00BCFD01 /* XCAssets+Generated.swift in Sources */,
+				F3585B5528B251B900BCFD01 /* APIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +652,14 @@
 				F3585B2728B23A1000BCFD01 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F3585B8728B26A3D00BCFD01 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3585B8828B26A3D00BCFD01 /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -591,6 +787,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VSHGTXPRBZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NewsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -603,7 +800,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Com.Demo.NewsApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vinayakWorkGroup.NewsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -619,6 +816,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VSHGTXPRBZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NewsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -631,7 +829,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Com.Demo.NewsApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vinayakWorkGroup.NewsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

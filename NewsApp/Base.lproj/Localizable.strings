@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  NewsApp
+
+  Created by Vinayak Thite on 21/08/22.
+  
+*/
+
+// API Errors
+"Error.unauthorized" = "Your session has been timed out. Please login again.";
+"Error.noInternet" = "Please check your internet connectivity.";
+"Error.somethingWentWrong" = "Something went wrong, Please try after sometime.";
+"Error.decodingFailed" = "Unable to manage your response, Please try after sometime.";
