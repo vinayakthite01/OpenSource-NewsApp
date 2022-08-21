@@ -20,6 +20,8 @@ internal enum StoryboardScene {
   internal enum News: StoryboardType {
     internal static let storyboardName = "News"
 
+    internal static let newsDetails = SceneType<NewsApp.NewsDetails>(storyboard: News.self, identifier: "NewsDetails")
+
     internal static let newsList = SceneType<NewsApp.NewsList>(storyboard: News.self, identifier: "NewsList")
   }
 }

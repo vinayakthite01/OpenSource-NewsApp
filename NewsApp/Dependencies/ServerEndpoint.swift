@@ -19,7 +19,7 @@ extension ServerEndpoint: EndPointType {
     /// base URL
     var baseURL: String { Environment.serverURL }
     /// api path
-    private var middlePath: String { "v2/top-headlines?" }
+    private var middlePath: String { "/v2/top-headlines?" }
     /// Country
     private var country: String {
         switch self {

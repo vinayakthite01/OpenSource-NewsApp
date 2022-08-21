@@ -16,7 +16,7 @@ class NewsListCoordinator: NewsListCoordinatorProtocol {
     /// private `variables`
     private(set) var dependencies: DependencyContainerProtocol
     private(set) var navigationController: NewsAppNavigationControllerProtocol
-    private let newsBuilder: NewsBuilderProtocol
+    private let newsBuilder: NewsListBuilderProtocol
     
     /// `initializer`
     /// - Parameters:
@@ -26,7 +26,7 @@ class NewsListCoordinator: NewsListCoordinatorProtocol {
          navigationController: NewsAppNavigationControllerProtocol) {
         self.dependencies = dependencies
         self.navigationController = navigationController
-        self.newsBuilder = NewsBuilder(apiManager: dependencies.apiManager)
+        self.newsBuilder = NewsListBuilder(apiManager: dependencies.apiManager)
     }
 
     /// start the flow
@@ -37,6 +37,8 @@ class NewsListCoordinator: NewsListCoordinatorProtocol {
 }
 
 extension NewsListCoordinator: NewsListNavigatorProtocol {
-    
-
+    func showNewsDetails() {
+//        let viewController = newsBuilder.build(with: self)
+//        navigationController.push(viewController: viewController, animated: true)
+    }
 }

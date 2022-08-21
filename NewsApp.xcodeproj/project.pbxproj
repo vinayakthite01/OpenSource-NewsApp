@@ -51,6 +51,11 @@
 		F3585BA328B29D0300BCFD01 /* NewsDetailsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585BA228B29D0300BCFD01 /* NewsDetailsBuilder.swift */; };
 		F3585BA528B29D1800BCFD01 /* NewsDetailsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585BA428B29D1800BCFD01 /* NewsDetailsProtocols.swift */; };
 		F3585BA728B29DA600BCFD01 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585BA628B29DA600BCFD01 /* NewsCell.swift */; };
+		F3585BAA28B2A59A00BCFD01 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585BA928B2A59A00BCFD01 /* UIViewController+Extension.swift */; };
+		F3585BAC28B2A5F000BCFD01 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585BAB28B2A5F000BCFD01 /* CustomAlert.swift */; };
+		F3585BAE28B2B84A00BCFD01 /* DirectURLRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585BAD28B2B84A00BCFD01 /* DirectURLRouter.swift */; };
+		F3585BB028B2B8A900BCFD01 /* DirectURLEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585BAF28B2B8A900BCFD01 /* DirectURLEndpoint.swift */; };
+		F3585BB228B2BD1F00BCFD01 /* GenerateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585BB128B2BD1F00BCFD01 /* GenerateAPI.swift */; };
 		F65A69E0F1C16431C56842C5 /* Pods_NewsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59890A2FA2898B864753B233 /* Pods_NewsAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +133,11 @@
 		F3585BA228B29D0300BCFD01 /* NewsDetailsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsBuilder.swift; sourceTree = "<group>"; };
 		F3585BA428B29D1800BCFD01 /* NewsDetailsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsProtocols.swift; sourceTree = "<group>"; };
 		F3585BA628B29DA600BCFD01 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		F3585BA928B2A59A00BCFD01 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		F3585BAB28B2A5F000BCFD01 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		F3585BAD28B2B84A00BCFD01 /* DirectURLRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectURLRouter.swift; sourceTree = "<group>"; };
+		F3585BAF28B2B8A900BCFD01 /* DirectURLEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectURLEndpoint.swift; sourceTree = "<group>"; };
+		F3585BB128B2BD1F00BCFD01 /* GenerateAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +262,7 @@
 				F3585B5828B252CF00BCFD01 /* SessionManager.swift */,
 				F3585B5C28B256FF00BCFD01 /* Networking */,
 				F3585B6828B25A0500BCFD01 /* ServerEndpoint.swift */,
+				F3585BAF28B2B8A900BCFD01 /* DirectURLEndpoint.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -262,6 +273,8 @@
 				F3585B5A28B256E400BCFD01 /* Router.swift */,
 				F3585B5D28B2573D00BCFD01 /* RouterHelper.swift */,
 				F3585B6A28B25B0E00BCFD01 /* NetworkCheckStack.swift */,
+				F3585BAD28B2B84A00BCFD01 /* DirectURLRouter.swift */,
+				F3585BB128B2BD1F00BCFD01 /* GenerateAPI.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -270,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				F3585B5F28B2579C00BCFD01 /* Logger.swift */,
+				F3585BAB28B2A5F000BCFD01 /* CustomAlert.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -311,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				F3585B6C28B25BB600BCFD01 /* DateFormatter+Extension.swift */,
+				F3585BA928B2A59A00BCFD01 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -652,18 +667,23 @@
 				F3585B6D28B25BB600BCFD01 /* DateFormatter+Extension.swift in Sources */,
 				F3585B9F28B29CCA00BCFD01 /* NewsDetailsViewModel.swift in Sources */,
 				F3585B5E28B2573D00BCFD01 /* RouterHelper.swift in Sources */,
+				F3585BAE28B2B84A00BCFD01 /* DirectURLRouter.swift in Sources */,
 				F3585B8428B2695A00BCFD01 /* IB-Scenes+Generated.swift in Sources */,
 				F3585B9328B27E7200BCFD01 /* NewsListViewModel.swift in Sources */,
+				F3585BB028B2B8A900BCFD01 /* DirectURLEndpoint.swift in Sources */,
+				F3585BAA28B2A59A00BCFD01 /* UIViewController+Extension.swift in Sources */,
 				F3585B5B28B256E400BCFD01 /* Router.swift in Sources */,
 				F3585B6028B2579C00BCFD01 /* Logger.swift in Sources */,
 				F3585B6B28B25B0E00BCFD01 /* NetworkCheckStack.swift in Sources */,
 				F3585B9528B27EDC00BCFD01 /* NewsListCoordinator.swift in Sources */,
 				F3585B5928B252CF00BCFD01 /* SessionManager.swift in Sources */,
 				F3585B8F28B27BBF00BCFD01 /* NewsList.swift in Sources */,
+				F3585BAC28B2A5F000BCFD01 /* CustomAlert.swift in Sources */,
 				F3585B8B28B26E3200BCFD01 /* Environment.swift in Sources */,
 				F3585B9C28B29CA700BCFD01 /* NewsDetails.swift in Sources */,
 				F3585B8628B2695A00BCFD01 /* Strings+Generated.swift in Sources */,
 				F3585B5028B2503E00BCFD01 /* Coordinator.swift in Sources */,
+				F3585BB228B2BD1F00BCFD01 /* GenerateAPI.swift in Sources */,
 				F3585B1C28B23A0C00BCFD01 /* AppDelegate.swift in Sources */,
 				F3585B9728B27EFE00BCFD01 /* NewsListProtocol.swift in Sources */,
 				F3585B6628B2588200BCFD01 /* NavigationController.swift in Sources */,
@@ -853,7 +873,7 @@
 		};
 		F3585B4328B23A1000BCFD01 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EBFAD1BFA2474A077C30C15 /* Pods-NewsApp.debug.xcconfig */;
+			baseConfigurationReference = F3585B6F28B25C8C00BCFD01 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -881,7 +901,7 @@
 		};
 		F3585B4428B23A1000BCFD01 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C3D5840ECEFA198F70E95EA /* Pods-NewsApp.release.xcconfig */;
+			baseConfigurationReference = F3585B7128B25CA000BCFD01 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

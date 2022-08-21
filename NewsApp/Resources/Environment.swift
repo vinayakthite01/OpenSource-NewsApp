@@ -26,11 +26,11 @@ public enum Environment {
     
     // MARK: - Plist values
     static let serverURL: String = {
-        guard let endevourURLstring = Environment.infoDictionary[Keys.Plist.serverURL] as? String,
-              endevourURLstring.count > 0 else {
-            fatalError("*** Server API key not set in plist for this environment ***")
+        guard let serverURLstring = Environment.infoDictionary[Keys.Plist.serverURL] as? String,
+              serverURLstring.count > 0 else {
+            fatalError("*** Server URL not set in plist for this environment ***")
         }
-        return endevourURLstring
+        return serverURLstring
     }()
     
     static let apiKey: String = {

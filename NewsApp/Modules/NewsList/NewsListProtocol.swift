@@ -8,6 +8,7 @@
 import Foundation
 
 protocol NewsListViewModelProtocol {
+    var newsListResponder: ((NewsListUIUpdateCase) -> Void)? { get set }
     func getTopHeadlines(forCountry country:String)
 }
 
@@ -16,6 +17,6 @@ protocol NewsListNavigatorProtocol {
 }
 
 enum NewsListUIUpdateCase {
-    case success
+    case success(model: NewsListModel)
     case error(error: APIError)
 }

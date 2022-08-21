@@ -1,22 +1,19 @@
 //
-//  Router.swift
+//  DirectURLRouter.swift
 //  NewsApp
 //
-//  Created by Vinayak Thite on 21/08/22.
+//  Created by Vinayak Thite on 22/08/22.
 //
 
 import Foundation
 
+import UIKit
 
-// MARK: - API Request Router -
-final class Router<EndPoint: EndPointType> {
+// MARK: - API Request DirectURLRouter -
+final class DirectURLRouter<EndPoint: DirectURLEndpointType> {
     private var task: URLSessionTask?
     
     typealias JSONTaskCompletionHandler = (Decodable?, APIError?) -> Void
-    
-    /// `initializer`
-    init() {
-    }
     
     /// Build API Request
     /// - Parameters:
@@ -31,40 +28,24 @@ final class Router<EndPoint: EndPointType> {
             completion(.failure(.unreachable))
             return
         }
-        
-        var components = URLComponents()
-        components.scheme = route.scheme
-        components.host = route.baseURL
-        components.path = route.path
-        components.queryItems = route.parameters
-        
-        Logger.log("components:\(components)")
-        guard let url = components.url else {
+
+        guard let url = URL(string: route.urlPath) else {
             completion(.failure(.somethingWentWrong))
             return
         }
-
+        
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = route.httpMethod.rawValue
-        urlRequest.httpBody = route.data
 
-        var headers = route.headers ?? []
-        
-        headers.forEach { urlRequest.addValue($0.header.value, forHTTPHeaderField: $0.header.field) }
-        
-        Logger.log(curl: urlRequest)
-
-        self.task = decodingTask(with: urlRequest, decodingType: T.self) { [weak self] (json, error) in
+        self.task = decodingTask(with: urlRequest, decodingType: T.self) { (json, error) in
 
             DispatchQueue.main.async {
-                if error != nil && error == APIError.unauthorized {
-                    
+                if error != nil {
+                    completion(.failure(.responseUnsuccessful(description: error!.description)))
                     return
                 }
                 guard let json = json else {
-                    completion(error != nil ?
-                               .failure(.responseUnsuccessful(description: error!.description)) :
-                               .failure(.somethingWentWrong))
+                    completion(.failure(.somethingWentWrong))
                     return
                 }
                 guard let value = decode(json) else {
@@ -90,17 +71,6 @@ final class Router<EndPoint: EndPointType> {
             
             guard let httpResponse = response as? HTTPURLResponse else {
                 completion(nil, .requestFailed(description: error?.localizedDescription ?? "## Request Fail"))
-                return
-            }
-                        
-            if httpResponse.statusCode == 401 {
-                completion(nil, .unauthorized)
-                return
-            }
-            
-            if httpResponse.statusCode == 204 ||
-                httpResponse.statusCode == 202 {
-                completion(EmptyData(), nil)
                 return
             }
             
@@ -137,7 +107,10 @@ final class Router<EndPoint: EndPointType> {
                 
                 completion(genericModel, nil)
             
-            } 
+            } catch let error {
+                Logger.log(error.localizedDescription)
+                completion(nil, .jsonDecodingFailure)
+            }
         }
         return task
     }

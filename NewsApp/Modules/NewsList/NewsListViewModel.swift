@@ -13,6 +13,8 @@ class NewsListViewModel: NewsListViewModelProtocol {
     private let apiManager: APIManagerProtocol?
     private let navigator: NewsListNavigatorProtocol?
     
+    var newsModel: NewsListModel?
+    var newsListResponder: ((NewsListUIUpdateCase) -> Void)?
     
     /// `initializer`
     /// - Parameters:
@@ -27,10 +29,11 @@ class NewsListViewModel: NewsListViewModelProtocol {
     func getTopHeadlines(forCountry country:String) {
         apiManager?.getTopBusinessHeadlines(country: country, completion: { [weak self] result in
             switch result {
-            case .success(_):
-                <#code#>
-            case .failure(_):
-                <#code#>
+            case .success(let listModel):
+                guard let model = listModel else { return }
+                self?.newsListResponder?(.success(model: model))
+            case .failure(let error):
+                self?.newsListResponder?(.error(error: error))
             }
         })
     }

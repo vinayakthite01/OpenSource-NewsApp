@@ -12,6 +12,8 @@ import Foundation
 final class APIManager {
     /// Router to call custom get/post request via Endevour
     private let serverRouter: Router<ServerEndpoint>
+    // Router to call Direct URLs
+    private let directUrlRouter: DirectURLRouter<DirectURLEndpoint>
     /// Session Manager
     private let sessionManager: SessionManagerProtocol
 
@@ -20,8 +22,9 @@ final class APIManager {
     /// - Parameters:
     ///   - sessionManager: Session Manager
     init(sessionManager: SessionManagerProtocol) {
-        self.serverRouter = Router<ServerEndpoint>()
         self.sessionManager = sessionManager
+        self.serverRouter = Router<ServerEndpoint>()
+        self.directUrlRouter = DirectURLRouter<DirectURLEndpoint>()
     }
 }
 
@@ -38,7 +41,8 @@ protocol APIManagerProtocol: AnyObject {
 extension APIManager: APIManagerProtocol {
     /// `News` API
     func getTopBusinessHeadlines(country:String, completion: @escaping (Result<NewsListModel?, APIError>) -> Void) {
-        serverRouter.request(.getTopHeadlines(countryCode: "us"), decode: { json -> NewsListModel? in
+        let urlString = GenerateAPI.scheme + Environment.serverURL + GenerateAPI.urlPath + GenerateAPI.country + country + ChooseOperator.questionMark + GenerateAPI.category + ChooseOperator.and + GenerateAPI.apiKeyConst + GenerateAPI.apiKey
+        directUrlRouter.request(.loadDirectURLDetails(url: urlString), decode: { json -> NewsListModel? in
             guard let results = json as? NewsListModel? else { return  nil }
             return results
         }, completion: completion)

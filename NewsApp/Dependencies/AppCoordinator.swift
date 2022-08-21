@@ -34,7 +34,7 @@ final class AppCoordinator: AppCoordinatorProtocol {
 
     /// start the flow
     func start() {
-        Logger.log("Environment.rootURL")
+        Logger.log(Environment.serverURL)
         showNewsList()
     }
 }
