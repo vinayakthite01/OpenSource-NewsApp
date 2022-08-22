@@ -7,12 +7,14 @@
 
 import Foundation
 
-struct NewsListModel: Codable {
-    let articles: [news]
+struct NewsListModel: Decodable {
+    let articles: [ArticlesModel]
+    let status: String?
+    let totalResults: Int?
 }
 
-struct news: Codable {
-    let source: [sourceDict]?
+struct ArticlesModel: Decodable {
+    // Article Keys:
     let author: String?
     let title: String?
     let desciption: String?
@@ -20,9 +22,5 @@ struct news: Codable {
     let urlToImage: String?
     let publishedAt: String?
     let content: String?
-}
-
-struct sourceDict: Codable {
-    let id: String?
-    let name: String?
+    
 }

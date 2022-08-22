@@ -41,7 +41,8 @@ protocol APIManagerProtocol: AnyObject {
 extension APIManager: APIManagerProtocol {
     /// `News` API
     func getTopBusinessHeadlines(country:String, completion: @escaping (Result<NewsListModel?, APIError>) -> Void) {
-        let urlString = GenerateAPI.scheme + Environment.serverURL + GenerateAPI.urlPath + GenerateAPI.country + country + ChooseOperator.questionMark + GenerateAPI.category + ChooseOperator.and + GenerateAPI.apiKeyConst + GenerateAPI.apiKey
+        let urlPath = "/v2/top-headlines?country=\(country)&category=business&apiKey="
+        let urlString = GenerateAPI.scheme + Environment.serverURL + urlPath + GenerateAPI.apiKey
         directUrlRouter.request(.loadDirectURLDetails(url: urlString), decode: { json -> NewsListModel? in
             guard let results = json as? NewsListModel? else { return  nil }
             return results
