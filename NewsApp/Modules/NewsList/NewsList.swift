@@ -11,6 +11,7 @@ final class NewsList: UIViewController {
     
     /// IBOutlets
     @IBOutlet private weak var newsTableView: UITableView!
+    @IBOutlet weak var noDataLabel: UILabel!
     
     var newsArticlesCount: Int? = 0
     
@@ -60,6 +61,13 @@ final class NewsList: UIViewController {
         switch result {
         case .success:
             newsArticlesCount = viewModel.getNewsArticles()?.count
+            if let _newsArticlesCount = newsArticlesCount, _newsArticlesCount > 0 {
+                self.noDataLabel.isHidden = true
+                self.newsTableView.isHidden = false
+            } else {
+                self.noDataLabel.isHidden = false
+                self.newsTableView.isHidden = true
+            }
             self.newsTableView.reloadData()
         case .error(let error):
             let okHandler = { }
