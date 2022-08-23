@@ -37,8 +37,10 @@ class NewsListCoordinator: NewsListCoordinatorProtocol {
 }
 
 extension NewsListCoordinator: NewsListNavigatorProtocol {
-    func showNewsDetails() {
-//        let viewController = newsBuilder.build(with: self)
-//        navigationController.push(viewController: viewController, animated: true)
+    func showNewsDetails(forArticle article: ArticlesModel) {
+        let newsDetailsCoordinator = NewsDetailsCoordinator(dependencies: dependencies,
+                                                            navigationController: navigationController,
+                                                            articles: article)
+        newsDetailsCoordinator.start()
     }
 }

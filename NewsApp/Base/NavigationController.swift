@@ -64,7 +64,7 @@ final class NewsAppNavigationController: UINavigationController {
     /// View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        isNavigationBarHidden = true
+        isNavigationBarHidden = false
     }
 
 }

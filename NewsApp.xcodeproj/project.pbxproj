@@ -56,6 +56,8 @@
 		F3585BAE28B2B84A00BCFD01 /* DirectURLRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585BAD28B2B84A00BCFD01 /* DirectURLRouter.swift */; };
 		F3585BB028B2B8A900BCFD01 /* DirectURLEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585BAF28B2B8A900BCFD01 /* DirectURLEndpoint.swift */; };
 		F3585BB228B2BD1F00BCFD01 /* GenerateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585BB128B2BD1F00BCFD01 /* GenerateAPI.swift */; };
+		F3585BB428B48D1700BCFD01 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585BB328B48D1700BCFD01 /* UITableViewCell+Extension.swift */; };
+		F3585BB628B490B700BCFD01 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3585BB528B490B600BCFD01 /* UIImageView+Extension.swift */; };
 		F65A69E0F1C16431C56842C5 /* Pods_NewsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59890A2FA2898B864753B233 /* Pods_NewsAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +140,8 @@
 		F3585BAD28B2B84A00BCFD01 /* DirectURLRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectURLRouter.swift; sourceTree = "<group>"; };
 		F3585BAF28B2B8A900BCFD01 /* DirectURLEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectURLEndpoint.swift; sourceTree = "<group>"; };
 		F3585BB128B2BD1F00BCFD01 /* GenerateAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateAPI.swift; sourceTree = "<group>"; };
+		F3585BB328B48D1700BCFD01 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		F3585BB528B490B600BCFD01 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,6 +330,8 @@
 			children = (
 				F3585B6C28B25BB600BCFD01 /* DateFormatter+Extension.swift */,
 				F3585BA928B2A59A00BCFD01 /* UIViewController+Extension.swift */,
+				F3585BB328B48D1700BCFD01 /* UITableViewCell+Extension.swift */,
+				F3585BB528B490B600BCFD01 /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -369,8 +375,8 @@
 				F3585B9228B27E7200BCFD01 /* NewsListViewModel.swift */,
 				F3585B9028B27BD000BCFD01 /* NewsListModel.swift */,
 				F3585B9428B27EDC00BCFD01 /* NewsListCoordinator.swift */,
-				F3585B9628B27EFE00BCFD01 /* NewsListProtocol.swift */,
 				F3585B9828B281F100BCFD01 /* NewsListBuilder.swift */,
+				F3585B9628B27EFE00BCFD01 /* NewsListProtocol.swift */,
 			);
 			path = NewsList;
 			sourceTree = "<group>";
@@ -664,6 +670,7 @@
 				F3585B4E28B24FFE00BCFD01 /* AppCoordinator.swift in Sources */,
 				F3585B6928B25A0500BCFD01 /* ServerEndpoint.swift in Sources */,
 				F3585BA728B29DA600BCFD01 /* NewsCell.swift in Sources */,
+				F3585BB428B48D1700BCFD01 /* UITableViewCell+Extension.swift in Sources */,
 				F3585B6D28B25BB600BCFD01 /* DateFormatter+Extension.swift in Sources */,
 				F3585B9F28B29CCA00BCFD01 /* NewsDetailsViewModel.swift in Sources */,
 				F3585B5E28B2573D00BCFD01 /* RouterHelper.swift in Sources */,
@@ -671,6 +678,7 @@
 				F3585B8428B2695A00BCFD01 /* IB-Scenes+Generated.swift in Sources */,
 				F3585B9328B27E7200BCFD01 /* NewsListViewModel.swift in Sources */,
 				F3585BB028B2B8A900BCFD01 /* DirectURLEndpoint.swift in Sources */,
+				F3585BB628B490B700BCFD01 /* UIImageView+Extension.swift in Sources */,
 				F3585BAA28B2A59A00BCFD01 /* UIViewController+Extension.swift in Sources */,
 				F3585B5B28B256E400BCFD01 /* Router.swift in Sources */,
 				F3585B6028B2579C00BCFD01 /* Logger.swift in Sources */,

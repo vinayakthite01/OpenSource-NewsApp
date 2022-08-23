@@ -8,19 +8,25 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--News List-->
+        <!--NewsApp-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="NewsList" id="BYZ-38-t0r" customClass="NewsList" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewsList" title="NewsApp" id="BYZ-38-t0r" customClass="NewsList" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Uj-a6-fZI">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hvx-gB-zm2">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="124" id="Rlk-lU-JRU" customClass="NewsCell" customModule="NewsApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NewsCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="124" id="Rlk-lU-JRU" customClass="NewsCell" customModule="NewsApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="124"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rlk-lU-JRU" id="9Xi-Kt-HJR">
@@ -67,8 +73,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="hvx-gB-zm2" secondAttribute="bottom" id="6sp-hR-OB3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Uj-a6-fZI" secondAttribute="bottom" id="THn-Qz-SFj"/>
                             <constraint firstItem="hvx-gB-zm2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ymq-x6-AP0"/>
+                            <constraint firstItem="7Uj-a6-fZI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lp3-a7-9a9"/>
                             <constraint firstItem="hvx-gB-zm2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mdh-Ro-blL"/>
+                            <constraint firstItem="7Uj-a6-fZI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oIg-2R-nxa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Uj-a6-fZI" secondAttribute="trailing" id="pTD-k0-siV"/>
                             <constraint firstItem="hvx-gB-zm2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tCI-th-yKc"/>
                         </constraints>
                     </view>
@@ -87,16 +97,55 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="76.339285714285708"/>
         </scene>
-        <!--News Details-->
+        <!--Article Details-->
         <scene sceneID="Frc-AU-880">
             <objects>
-                <viewController storyboardIdentifier="NewsDetails" id="aLt-Vq-u4y" customClass="NewsDetails" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewsDetails" title="Article Details" id="aLt-Vq-u4y" customClass="NewsDetails" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z6h-BE-Kk3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdK-wp-FNx">
+                                <rect key="frame" x="20" y="296" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qE2-79-HtV">
+                                <rect key="frame" x="20" y="326.5" width="374" height="495.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vuI-Tp-iby">
+                                <rect key="frame" x="20" y="88" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="e6P-ev-e34"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gu8-ZH-ooh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gu8-ZH-ooh" firstAttribute="trailing" secondItem="qE2-79-HtV" secondAttribute="trailing" constant="20" id="AO9-jP-KP6"/>
+                            <constraint firstItem="rdK-wp-FNx" firstAttribute="leading" secondItem="gu8-ZH-ooh" secondAttribute="leading" constant="20" id="AlD-VS-vt1"/>
+                            <constraint firstItem="vuI-Tp-iby" firstAttribute="leading" secondItem="gu8-ZH-ooh" secondAttribute="leading" constant="20" id="GGX-xJ-y53"/>
+                            <constraint firstItem="gu8-ZH-ooh" firstAttribute="trailing" secondItem="rdK-wp-FNx" secondAttribute="trailing" constant="20" id="JF2-2L-1Wb"/>
+                            <constraint firstItem="gu8-ZH-ooh" firstAttribute="trailing" secondItem="vuI-Tp-iby" secondAttribute="trailing" constant="20" id="V2c-Vr-DN7"/>
+                            <constraint firstItem="vuI-Tp-iby" firstAttribute="top" secondItem="gu8-ZH-ooh" secondAttribute="top" constant="44" id="dWk-Ua-32V"/>
+                            <constraint firstItem="qE2-79-HtV" firstAttribute="top" secondItem="rdK-wp-FNx" secondAttribute="bottom" constant="10" id="ftS-rV-t4P"/>
+                            <constraint firstItem="gu8-ZH-ooh" firstAttribute="bottom" secondItem="qE2-79-HtV" secondAttribute="bottom" constant="40" id="ktL-Ow-g32"/>
+                            <constraint firstItem="qE2-79-HtV" firstAttribute="leading" secondItem="gu8-ZH-ooh" secondAttribute="leading" constant="20" id="tcb-ds-rc8"/>
+                            <constraint firstItem="rdK-wp-FNx" firstAttribute="top" secondItem="vuI-Tp-iby" secondAttribute="bottom" constant="8" symbolic="YES" id="w9Z-6L-Ewt"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="vuI-Tp-iby" id="vhf-wP-g9K"/>
+                        <outlet property="newsDetailDescription" destination="qE2-79-HtV" id="9yk-eh-oMR"/>
+                        <outlet property="newsTitle" destination="rdK-wp-FNx" id="5lj-Dw-6Gk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kx-dr-zOA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,6 +171,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -8,22 +8,36 @@
 import UIKit
 
 class NewsDetails: UIViewController {
+    
+    @IBOutlet weak var newsTitle: UILabel!
+    @IBOutlet weak var newsDetailDescription: UITextView!
+    @IBOutlet weak var imageView: UIImageView!
+    
+    // MARK: Instance variables
+    private var viewModel: NewsDetailsViewModelProtocol
+    
+    // MARK: Initializers
+
+    init?(coder: NSCoder,
+          viewModel: NewsDetailsViewModelProtocol) {
+        self.viewModel = viewModel
+        super.init(coder: coder)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("You must create this view controller.")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        configureUI()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func configureUI() {
+        self.title = "Article Details"
+        self.imageView.setKFImage(image: viewModel.getNewsImageUrl())
+        self.newsTitle.text = viewModel.getNewsTitle()
+        self.newsDetailDescription.text = viewModel.getNewsContent()
     }
-    */
 
 }

@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+protocol NewsDetailsViewModelProtocol {
+    func getNewsTitle() -> String?
+    func getNewsContent() -> String?
+    func getNewsImageUrl() -> String?
+}
+
+protocol NewsDetailsNavigatorProtocol {
+}
+
