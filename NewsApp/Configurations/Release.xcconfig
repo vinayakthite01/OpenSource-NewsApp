@@ -1,0 +1,17 @@
+//
+//  Release.xcconfig
+//  NewsApp
+//
+//  Created by Vinayak Thite on 21/08/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Pods/Target Support Files/Pods-NewsApp/Pods-NewsApp.release.xcconfig"
+
+// Server URL
+SERVER_URL = newsapi.org
+
+// News App API Key
+API_KEY = 13602569df7443ffaa7bac70d5b0a4b0
